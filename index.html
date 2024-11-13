@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Registration Form</title>
+        
+    <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+    <div class="container">
+        <h1>Manaoag National High School</h1>
+        <form id="registration-form">
+            <!-- Student Information -->
+            <h2>Enrollment Registration Form<Form></Form></h2>
+            <h3>Student Information</h3>
+            <div class="form-group name-group">
+                <div class="name-field">
+                    <label for="student-first-name">First Name:</label>
+                    <input type="text" id="student-first-name" name="student-first-name" required>
+                </div>
+                <div class="name-field">
+                    <label for="student-middle-name">Middle Name:</label>
+                    <input type="text" id="student-middle-name" name="student-middle-name" required>
+                </div>
+                <div class="name-field">
+                    <label for="student-last-name">Last Name:</label>
+                    <input type="text" id="student-last-name" name="student-last-name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-field">
+                    <label for="place-of-birth">Place of Birth:</label>
+                    <input type="text" id="place-of-birth" name="place-of-birth" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-field">
+                    <label for="student-last-name">LRN Number:</label>
+                    <input type="text" id="lrf-number" name="lrf-number" required>
+                </div>
+            </div>
+            <div class="form-group age-gender-group">
+                <div class="form-field">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-field">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="form-field">
+                        <label for="student-phone-number">Student Phone Number:</label>
+                        <input type="text" id="student-phone-number" name="student-phone-number" required>
+                    </div>
+                </div>
+            </div>
+
+            <fieldset> <legend> Person With Disability</legend> <label for="pwd-yes">Yes</label>
+                <input type="radio" id="pwd-yes" name="pwd" value="Yes"> <label for="pwd-no">No</label> 
+                <input type="radio" id="pwd-no" name="pwd" value="No"> 
+                <div id="pwd-type" style="display:none;"> 
+                 <p>Specify the type of disability:</p> 
+                 <input type="checkbox" id="autism" name="disability" value="Autism Spectrum Disorder"> <label for="autism">Autism Spectrum Disorder</label> 
+  <br> 
+  <input type="checkbox" id="intellectual" name="disability" value="Intellectual Disability"> <label for="intellectual">Intellectual Disability</label> 
+  <br> 
+  <input type="checkbox" id="hearing" name="disability" value="Hearing Impairment"> <label for="hearing">Hearing Impairment</label> 
+  <br> 
+  <input type="checkbox" id="visual" name="disability" value="Visual Impairment"> <label for="visual">Visual Impairment</label> 
+  <br> 
+  <input type="checkbox" id="learning" name="disability" value="Learning Disability"> <label for="learning">Learning Disability</label> 
+  <br> 
+  <input type="checkbox" id="multiple" name="disability" value="Multiple Disabilities"> <label for="multiple">Multiple Disabilities</label> 
+ </div> 
+        </fieldset>
+
+<fieldset> <legend> 4Ps Beneficiary Information</legend>
+    <label for="4Ps-yes">Is yourfamily a Beneficiary of 4Ps</label>
+    <label for="4ps-yes">Yes</label> 
+   <input type="radio" id="4ps-yes" name="4ps" value="Yes" onclick="document.getElementById('4ps-id').style.display='block'"> <label for="4ps-no">No</label> 
+   <input type="radio" id="4ps-no" name="4ps" value="No" onclick="document.getElementById('4ps-id').style.display='none'"> 
+   <div id="4ps-id" style="display:none;"> <label for="household-id">4Ps Household ID Number:No</label> 
+    <input type="text" id="household-id" name="household-id"> 
+
+</fieldset>
+
+            <div class="form-group address-group">
+                <div class="form-field">
+                    <label for="barangay">Barangay:</label>
+                    <input type="text" id="barangay" name="barangay" required>
+                </div>
+                <div class="form-field">
+                    <label for="house-number">House Number:</label>
+                    <input type="text" id="house-number" name="house-number" required>
+                </div>
+                <div class="form-field">
+                    <label for="zone-number">Zone Number:</label>
+                    <input type="text" id="zone-number" name="zone-number" required>
+                </div>
+            </div>
+            
+            <!-- Parent Information -->
+            <h3>Parent Information</h3>
+<div class="form-group name-group">
+    <div class="name-field">
+        <label for="father-first-name">Father's First Name:</label>
+        <input type="text" id="father-first-name" name="father-first-name" required>
+    </div>
+    <div class="name-field">
+        <label for="father-middle-name">Father's Middle Name:</label>
+        <input type="text" id="father-middle-name" name="father-middle-name" required>
+    </div>
+    <div class="name-field">
+        <label for="father-last-name">Father's Last Name:</label>
+        <input type="text" id="father-last-name" name="father-last-name" required>
+    </div>
+</div>
+<div class="form-group name-group">
+    <div class="name-field">
+        <label for="mother-first-name">Mother's First Name:</label>
+        <input type="text" id="mother-first-name" name="mother-first-name" required>
+    </div>
+    <div class="name-field">
+        <label for="mother-middle-name">Mother's Middle Name:</label>
+        <input type="text" id="mother-middle-name" name="mother-middle-name" required>
+    </div>
+    <div class="name-field">
+        <label for="mother-last-name">Mother's Last Name:</label>
+        <input type="text" id="mother-last-name" name="mother-last-name" required>
+    </div>
+</div>
+<div class="form-group name-group">
+    <div class="form-field">
+        <label for="guardian-phone-number">Guardian's First Name:</label>
+        <input type="text" id="guardian-first-name" name="guardian-phone-number" required>
+    </div>
+    <div class="name-field">
+        <label for="mother-middle-name">Guardian's Middle Name:</label>
+        <input type="text" id="guardian-middle-name" name="guardian-middle-name" required>
+    </div>
+    <div class="name-field">
+        <label for="mother-last-name">Guardian's Last Name:</label>
+        <input type="text" id="guardian-last-name" name="guardian-last-name" required>
+    </div>
+</div>
+<div class="form-group">
+    <div class="form-field">
+        <label for="guardian-phone-number">Guardian Phone Number:</label>
+        <input type="text" id="guardian-phone-number" name="guardian-phone-number" required>
+    </div>
+</div>
+
+
+
+            <!-- Academic Information -->
+            <h3>Academic Information</h3>
+            <div class="form-group">
+                <label for="grade-level">Grade Level:</label>
+                <select id="grade-level" name="grade-level" required>
+                    <option value="">Select</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="strand">Strand:</label>
+                <select id="strand" name="strand" required>
+                    <option value="">Select</option>
+                    <option value="HUMSS">HUMSS</option>
+                    <option value="STEM">STEM</option>
+                    <option value="ABM">ABM</option>
+                    <option value="GAS">GAS</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="form-field">
+                    <label for="email-account">Email Account:</label>
+                    <input type="text" id="email-account" name="email-account" required>
+                </div>
+            </div>
+            
+
+    <button type="submit-button">Submit Registration</button>
+
+</div>        
+        </form>
+    </div>
+</body>
+
+<script>
+
+
+    // Get the radio buttons and the disability options div
+    const yesRadio = document.getElementById('yes');
+    const noRadio = document.getElementById('no');
+    const disabilityOptions = document.getElementById('disabilityOptions');
+
+    // Show the disability options when "Yes" is selected
+    yesRadio.addEventListener('change', function() {
+        if (yesRadio.checked) {
+            disabilityOptions.style.display = 'block';
+        }
+    });
+
+    // Hide the disability options when "No" is selected
+    noRadio.addEventListener('change', function() {
+        if (noRadio.checked) {
+            disabilityOptions.style.display = 'none';
+        }
+    });
+</script>
+
+
+<script>
+    document.getElementById('registration-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        // Collect form data
+        const formData = {
+            studentFirstName: document.getElementById('student-first-name').value,
+            studentMiddleName: document.getElementById('student-middle-name').value,
+            studentLastName: document.getElementById('student-last-name').value,
+            lrnNumber: document.getElementById('lrn-number').value,
+            age: document.getElementById('age').value,
+            gender: document.getElementById('gender').value,
+            studentPhoneNumber: document.getElementById('student-phone-number').value,
+            houseNumber: document.getElementById('house-number').value,
+            barangay: document.getElementById('barangay').value,
+            zoneNumber: document.getElementById('zone-number').value,
+            fatherFirstName: document.getElementById('father-first-name').value,
+            fatherMiddleName: document.getElementById('father-middle-name').value,
+            fatherLastName: document.getElementById('father-last-name').value,
+            motherFirstName: document.getElementById('mother-first-name').value,
+            motherMiddleName: document.getElementById('mother-middle-name').value,
+            motherLastName: document.getElementById('mother-last-name').value,
+            placeOfBirth: document.getElementById('place-of-birth').value,
+            guardianPhoneNumber: document.getElementById('guardian-phone-number').value,
+            gradeLevel: document.getElementById('grade-level').value,
+            strand: document.getElementById('strand').value,
+            emailAccount: document.getElementById('email-account').value,
+        };
+    
+        // Log the data to the console (for testing)
+        console.log('Form Data Submitted:', formData);
+    
+        // Optionally, you can send the data to a server using fetch or XMLHttpRequest
+        /*
+        fetch('your-server-endpoint', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+        */
+       
+
+    });
+
+    </script>
+    
+    <script>
+        document.querySelectorAll('input[name="pwd"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.getElementById('pwd-type').style.display = this.value === 'Yes' ? 'block' : 'none';
+            });
+        });
+        </script>
+
+</html>
